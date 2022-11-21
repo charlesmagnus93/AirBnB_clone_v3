@@ -17,7 +17,7 @@ def close(error):
 
 @app.errorhandler(404)
 def not_found(error):
-    """Return this if the request not have a match"""
+    """Return 404 if the request not have a match"""
     return jsonify({"error": "Not found"}), 404
 
 
