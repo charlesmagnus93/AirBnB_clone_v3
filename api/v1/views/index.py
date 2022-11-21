@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """checking on the status"""
-from api.v1.views import app_views
+#from api.v1.views import app_views
+from . import app_views
 from flask import jsonify
 from models import storage
 from models.state import State
